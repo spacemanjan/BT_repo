@@ -4,6 +4,6 @@
 
 <h2>Past Repositories</h2>
 
-https://spacemanjan.github.io/BT_repo/BT2/ 
-https://spacemanjan.github.io/BT_repo/BT1/
+<a>https://spacemanjan.github.io/BT_repo/BT2/</a>
+<a>https://spacemanjan.github.io/BT_repo/BT1/</a>
 
