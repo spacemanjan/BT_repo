@@ -1,0 +1,90 @@
+
+.bg{
+	position:absolute;
+	background-image: url("background_1.png");
+	top:0;
+	left:0;
+	width:100%;
+	background-position: center center;
+ 	background-repeat: no-repeat;
+  	background-size: cover;	
+	
+}
+
+.Blazing_Tire_logo{
+	margin-top:34px;
+	padding:23px;
+}
+/*Mobile options container*/
+.s1{
+
+}
+/*Mobile carwash and mobile garage css properties*/
+.s1 > .option{
+	padding-left: 78px;
+	padding-right: 78px;
+	padding-top:34px;
+}
+
+/*Shop Area*/
+.s2{
+	width:78%;
+
+	text-align:center;
+
+	border-style:solid;
+	border-radius: 38px;
+	border-width:3px;
+	border-color:#fff;
+
+	margin-left:10%;
+	margin-right:10%;
+	margin-top:31px;
+	overflow:auto;
+}
+
+#shop{
+	font-family:helvetica;
+	font-style:normal;
+	font-weight:normal;
+	font-size: 22px;
+	color:#fff;
+	margin-top:-3%;
+}
+/*Tires or Wheels*/
+/*Wrapper for the options*/
+.opwrapper{
+	margin: 0 auto;
+    margin-top:-6%;
+}
+/*ID for Wheels*/
+#option1{
+	float:left;
+	width:36%;
+	height:auto;
+	padding-left:7%;
+	padding-bottom: 6%;
+	
+}
+
+#option2{
+	float:right;
+	width:40%;
+	height:auto;
+	padding-right:7%;
+	padding-bottom: 6%;
+	
+}
+/*ID for Tires*/
+
+/*Container for bottom of page*/
+.s3{
+	margin-top:10%;
+	margin-left:22.5%;
+	height:100%;
+	margin-bottom:67%;
+	width:55%
+
+}
+
+
