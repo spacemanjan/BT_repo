@@ -6,51 +6,132 @@
 
 
 <body>
-	<div class="section">
-	<div id="landingBackground">
-		<div class="Blazing_Tire_logo">
-			<img src="assets/pngblaze.png" alt="BlazingTire" width="100%" height="100%">
-		</div>
-
-		<div class="s1">
-			<div class="option">
-				<button class="button" type="submit">
-				<img src="assets/mobile_garage.png" alt="BlazingTire" width="100%" height="100%">
-				</button>
+	<div class="wrapper">
+	<!-- LANDING PAGE SECTION -->
+		<div id="section1">
+			<div class="Blazing_Tire_logo">
+				<img src="assets/pngblaze.png" alt="BlazingTire" width="100%" height="100%">
 			</div>
-			<div class="option">
-				<img src="assets/mobile_carwash.png" alt="BlazingTire" width="100%" height="100%">
-			</div>
-		</div>
-
-		<div class="s2">
-			<div id="shop">
-				<h2>Shop</h2>
-			</div>
-			<!-- having some difficulty aligning this properly within the div -->
-			<div class="opwrapper">
-				<div id="option1">
-					<img src="assets/tires.png" alt="BlazingTire" width="100%" height="100%">
+			<div class="s1">
+				<div class="option">
+					<form action="https://m.me/blazingtire?ref=websitelead">
+						<button class="button" type="submit">
+							<img src="assets/mobile_garage.png" alt="BlazingTire" width="100%" height="100%">
+						</button>
+					</form>
 				</div>
-				<div id="option2">
-					<img src="assets/wheels.png" alt="BlazingTire" width="100%" height="100%">
+				<div class="option">
+					<form action="https://m.me/blazingtire?ref=websitelead">
+						<button class="button" type="submit">
+							<img src="assets/mobile_carwash.png" alt="BlazingTire" width="100%" height="100%">
+						</button>
+					</form>
 				</div>
 			</div>
-		</div>
 
-		<div class="s3">
-			<div class="foot">
-				<img src="assets/get_deals.png" alt="BlazingTire" width="100%" height="100%">
+			<div class="s2">
+				<div id="shop">
+					<h2>Shop</h2>
+				</div>
+				<!-- having some difficulty aligning this properly within the div -->
+				<div class="opwrapper">
+					<div id="option1">
+						<form action="https://m.me/blazingtire?ref=websitelead">
+							<button class="button" type="submit">
+								<img src="assets/tires.png" alt="BlazingTire" width="100%" height="100%">
+							</button>
+						</form>
+					</div>
+
+					<div id="option2">
+						<form action="https://m.me/blazingtire?ref=websitelead">
+							<button class="button" type="submit">
+								<img src="assets/wheels.png" alt="BlazingTire" width="100%" height="100%">
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="s3">
+				<div class="foot">
+					<form action="https://m.me/blazingtire?ref=websitelead">
+					<button class="button" type="submit">
+					<img src="assets/get_deals.png" alt="BlazingTire" width="100%" height="100%">
+					</button>
+				</form>
+				</div>
+			</div>
+		</div>
+<!-- IMAGE SECTION -->
+		<div class="section" id="section2">
+			<img src="assets/temp.jpg">
+			<div class="foo" href="info.html">
+				<h1>How does it work?</h1>
+				<p>Meet the future of Car Care</p>
+				<a href="info.html">Here</a>
+			</div>
+		</div>
+<!-- GALLERY SECTION -->
+		<div class="section" id="section3">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+				    <div class="numbertext">1 / 3</div>
+				    <img src="assets/img1.jpg" style="width:100%">
+				    <div class="text">Oil Changes</div>
+				</div>
+				<div class="mySlides fade">
+				    <div class="numbertext">2 / 3</div>
+				    <img src="assets/img2.jpg" style="width:100%">
+				    <div class="text">Deep Cleaning</div>
+				</div>
+				<div class="mySlides fade">
+				    <div class="numbertext">3 / 3</div>
+				    <img src="assets/img3.jpg" style="width:100%">
+				    <div class="text">Tire Care</div>
+				</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
 			</div>
 		</div>
 	</div>
 
-	<div id="part2">
-		<div class="s1" id="deals2">
-			<img src="assets/get_deals.png" alt="BlazingTire" width="100%" height="100%">
-		</div>
-	</div>
-	</div>
 
+<!-- Javascript -->
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+</script>
 </body>
 </html>
