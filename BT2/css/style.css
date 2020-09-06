@@ -1,5 +1,9 @@
+body {
+	margin:0px;
+}
 
-.bg{
+
+.background_image{
 	position:absolute;
 	background-image: url("background_1.png");
 	top:0;
@@ -44,7 +48,7 @@
 }
 
 #shop{
-	font-family:helvetica;
+	font-family:'Work Sans', sans-serif;
 	font-style:normal;
 	font-weight:normal;
 	font-size: 22px;
@@ -81,10 +85,8 @@
 .s3{
 	margin-top:10%;
 	margin-left:22.5%;
-	height:100%;
-	margin-bottom:67%;
+	margin-bottom:55%;
 	width:55%
-
 }
 
 
